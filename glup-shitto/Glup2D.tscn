@@ -1,0 +1,35 @@
+[gd_scene load_steps=4 format=3 uid="uid://dp17ebd3xi04k"]
+
+[ext_resource type="Script" uid="uid://17stid340ufw" path="res://glup_shitto.gd" id="1_4fprp"]
+[ext_resource type="Texture2D" uid="uid://bj1ybehqh045l" path="res://sprites/glup.png" id="1_pvg5g"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4fprp"]
+size = Vector2(69, 79)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="GlupShitto" type="CharacterBody2D" parent="."]
+script = ExtResource("1_4fprp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GlupShitto"]
+visible = false
+position = Vector2(53, 597.5)
+shape = SubResource("RectangleShape2D_4fprp")
+
+[node name="Sprite2D" type="Sprite2D" parent="GlupShitto"]
+texture_filter = 1
+position = Vector2(57, 598)
+scale = Vector2(2.46875, 2.46875)
+texture = ExtResource("1_pvg5g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(576, 332)
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+freeze = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="RigidBody2D"]
+polygon = PackedVector2Array(38, 661, 1081, 658, 847, 497)
+
+[node name="CollisionPolygon2D" type="Polygon2D" parent="RigidBody2D/CollisionPolygon2D"]
+polygon = PackedVector2Array(38, 661, 1081, 658, 847, 497)
