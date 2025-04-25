@@ -1,0 +1,16 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1745559803
+Glup2D.tscn::PackedScene::8267718672660524856::1745558938::0::1::::<><><>0<>0<><>::uid://bkv5g6mnnjmbc::::res://player.tscn<>uid://lrfg6o7bafx5::::res://sprites/testtile/test2.png<>uid://c1nwt6vh3nrhx::::res://sprites/testtile/test.png
+glup_shitto.gd::GDScript/GDScript::1892097284805910120::1745304201::0::1::::<>CharacterBody2D<><>0<>0<><>::
+icon.svg::CompressedTexture2D/CompressedTexture2D::3333765602060855247::1745304201::1745318988::1::::<><><>0<>0<>0b0d157de1d897f318c4d92744bf02e2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+player.tscn::PackedScene::3133494924825011468::1745558938::0::1::::<><><>0<>0<><>::uid://17stid340ufw::::res://glup_shitto.gd<>uid://b7tsknumixcda::::res://sprites/Glup2.png
+::res://glup_shitto/::1745553149
+::res://sprites/::1745555806
+gleep shiteep.png::CompressedTexture2D/CompressedTexture2D::6288641698273070483::1745524279::1745552567::1::::<><><>0<>0<>59f337611dd4b916999580b54bce6062<>res://.godot/imported/gleep shiteep.png-b3f864db38037197e152296919e5bae5.ctex::
+Glup2.png::CompressedTexture2D/CompressedTexture2D::4672798335502580774::1745379153::1745379212::1::::<><><>0<>0<>f94205cdae9a72322fbafa38d8b7eacb<>res://.godot/imported/Glup2.png-884d7a6451a1bab89bb5adfee78cb4d3.ctex::
+Glup3.png::CompressedTexture2D/CompressedTexture2D::1700469907069627745::1745379884::1745379984::1::::<><><>0<>0<>d4e293531bf4d9dca031e518bb074fae<>res://.godot/imported/Glup3.png-2d1d1f5f6394f5d3a5c75b3fd708b317.ctex::
+Glup JumpAnim.png::CompressedTexture2D/CompressedTexture2D::495772679641555434::1745379978::1745379984::1::::<><><>0<>0<>899dc313d4582431e33503ee308986f7<>res://.godot/imported/Glup JumpAnim.png-524370df609d9a0815edd0b296414e44.ctex::
+glup.png::CompressedTexture2D/CompressedTexture2D::3073253313305616499::1745304201::1745318988::1::::<><><>0<>0<>7fcc35df8deaca8ad8d23c497b0d0ded<>res://.godot/imported/glup.png-e3c09b5119520211b5e1363c1697cc2c.ctex::
+::res://sprites/testtile/::1745556117
+test2.png::CompressedTexture2D/CompressedTexture2D::807487652871026896::1745556097::1745556117::1::::<><><>0<>0<>3a8d98f0af9a3925a9d399bf4087a237<>res://.godot/imported/test2.png-3d067fee0d48c8ec9805331672da7298.ctex::
+test.png::CompressedTexture2D/CompressedTexture2D::6625959577723619857::1745555814::1745555816::1::::<><><>0<>0<>8128ce3b5c0c03057ad88a46d60f5470<>res://.godot/imported/test.png-de50bc5491aa9fde6c65c076c3324ee5.ctex::
