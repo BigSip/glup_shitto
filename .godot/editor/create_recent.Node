@@ -1,4 +1,5 @@
 TileMapLayer
+TileMap
 Polygon2D
 CollisionPolygon2D
 RigidBody2D
