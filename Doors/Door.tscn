@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://crodwupqd3hpe"]
+
+[ext_resource type="Script" uid="uid://co3jifgcd20pk" path="res://door.gd" id="1_1vvux"]
+
+[node name="Door_" type="Area2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_1vvux")
+destination_level_tag = "res://GlupHouse.tscn"
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+z_index = 1
+position = Vector2(112, -16)
+scale = Vector2(13.84, 13.84)
+polygon = PackedVector2Array(-10.4046, -10.4046, -10.4046, 10.4046, -6.35838, 10.4046, -6.35838, -10.4046)
+
+[node name="Spawn" type="Marker2D" parent="."]
+position = Vector2(136, 16)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

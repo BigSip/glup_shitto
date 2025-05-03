@@ -1,3 +1,8 @@
-res://Glup2D.tscn
-res://Glup General Tiles.tres
 res://player.tscn
+res://Glup General Tiles.tres
+res://glup_shitto.gd
+res://Glup2D.tscn
+res://main_menu.tscn
+res://GlupHouse.tscn
+res://GlupFrontYard.tscn
+res://door.gd
