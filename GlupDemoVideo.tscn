@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cyqtvtkffv6o6"]
+
+[ext_resource type="VideoStream" uid="uid://cnq6gbu1afoqo" path="res://GlupDemo.ogv" id="1_h2jx4"]
+[ext_resource type="Script" uid="uid://brho4j185jyde" path="res://DemoVid.gd" id="2_vjp0x"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+stream = ExtResource("1_h2jx4")
+autoplay = true
+script = ExtResource("2_vjp0x")
+
+[connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]

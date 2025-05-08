@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://bcisbt33gditw"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_hrvse"]
+
+[resource]
+script = ExtResource("1_hrvse")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(0, 0),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "My friends made me this jacket. It may not look perfect, but it's mine, and that's all that matters.",
+"offset": Vector2(380, -40),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

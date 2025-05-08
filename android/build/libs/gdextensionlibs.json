@@ -1,0 +1,9 @@
+[
+	"res://android/build/libs/release/arm64-v8a/libgdffmpeg.android.template_release.arm64.so",
+	"res://android/build/libs/release/arm64-v8a/libavcodec.so",
+	"res://android/build/libs/release/arm64-v8a/libavfilter.so",
+	"res://android/build/libs/release/arm64-v8a/libavformat.so",
+	"res://android/build/libs/release/arm64-v8a/libavutil.so",
+	"res://android/build/libs/release/arm64-v8a/libswresample.so",
+	"res://android/build/libs/release/arm64-v8a/libswscale.so"
+]

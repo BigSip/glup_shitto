@@ -1,8 +1,11 @@
-res://player.tscn
-res://Glup General Tiles.tres
-res://glup_shitto.gd
-res://Glup2D.tscn
 res://main_menu.tscn
+res://Glup General Tiles.tres
+res://GlupMale.stylebox
+res://GlupHouse.gdshader
+res://player.tscn
 res://GlupHouse.tscn
 res://GlupFrontYard.tscn
-res://door.gd
+res://GlupHills.tscn
+res://potatoPicking.tscn
+res://touch_controls.tscn
+res://gerpaderp.gd

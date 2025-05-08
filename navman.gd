@@ -2,6 +2,9 @@ extends Node
 
 const scene_glup_house = preload("res://GlupHouse.tscn")
 const scene_glup_yard = preload("res://GlupFrontYard.tscn")
+const scene_glup_hills = preload("res://GlupHills.tscn")
+const scene_demo = preload("res://GlupDemoVideo.tscn")
+const scene_picking = preload("res://potatoPicking.tscn")
 
 signal on_trigger_player_spawn
 
@@ -15,6 +18,12 @@ func go_to_level(level_tag, destination_tag):
 			scene_to_load = scene_glup_house
 		"GlupYard":
 			scene_to_load = scene_glup_yard
+		"GlupHills":
+			scene_to_load = scene_glup_hills
+		"Demo":
+			scene_to_load = scene_demo
+		"picking":
+			scene_to_load = scene_picking
 			
 	if scene_to_load != null:
 		spawn_door_tag = destination_tag

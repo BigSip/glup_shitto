@@ -1,0 +1,127 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://c8gnku55k8yan"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_kwnc2"]
+
+[resource]
+script = ExtResource("1_kwnc2")
+starts = {
+"START": &"0_1",
+"START2": &"0_2",
+"START3": &"0_3"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-100, 340),
+"start_id": "START"
+},
+&"0_2": {
+"link": &"1_6",
+"offset": Vector2(-100, 520),
+"start_id": "START2"
+},
+&"0_3": {
+"link": &"1_7",
+"offset": Vector2(-100, 1200),
+"start_id": "START3"
+},
+&"1_1": {
+"dialogue": "Hi Glup! Good to see you today!",
+"offset": Vector2(180, 860),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+},
+&"1_2": {
+"dialogue": "Glad you're here to pick some potatoes.",
+"offset": Vector2(580, 1040),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Thanks..."
+},
+1: {
+"condition": {},
+"link": &"1_4",
+"text": "Oh..."
+}
+},
+"size": Vector2(300, 273),
+"speaker": "Gerpaderp"
+},
+&"1_3": {
+"dialogue": "You seem kinda down, Glup. Something the matter?",
+"offset": Vector2(980, 1540),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "You ever feel like jumping for apples?"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+},
+&"1_4": {
+"dialogue": "Hey, what's wrong?",
+"offset": Vector2(980, 1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": "You ever feel like jumping for apples?"
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+},
+&"1_5": {
+"dialogue": "Glup, I dunno what to tell you, but we're potato pickers. We're born to pick potatoes. Guess we just gotta man up and do what we're meant to, ya know?",
+"offset": Vector2(1380, 1340),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "I know..."
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+},
+&"1_6": {
+"dialogue": "Hey man, go ahead and pick your potatoes. We'll talk later, okay?",
+"offset": Vector2(180, 520),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+},
+&"1_7": {
+"dialogue": "Dude why are you jumping like that? Not really potato picker of you...",
+"offset": Vector2(180, 1200),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Gerpaderp"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

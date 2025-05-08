@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://dghsleg8taadb"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_0u63v"]
+
+[resource]
+script = ExtResource("1_0u63v")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(230, 492),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "Those apples really do look nice. But I'm a potato picker, so it's not really for me to pick those apples.",
+"offset": Vector2(548, 450),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

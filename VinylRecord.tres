@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://cnrd0bfdnsis3"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_6e3b2"]
+
+[resource]
+script = ExtResource("1_6e3b2")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(163.47, 172.723),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "It's a decorative vinyl my friend made me for one of our favorite bands. I love her.",
+"offset": Vector2(468.654, 161.586),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

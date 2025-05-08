@@ -18,11 +18,21 @@ config/icon="res://icon.svg"
 [autoload]
 
 Navman="*res://navman.gd"
+InteractionManager="*res://interaction/interaction_manager.tscn"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/stretch/mode="viewport"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_nodes/plugin.cfg")
+
+[global_group]
+
+player=""
 
 [input]
 
@@ -49,6 +59,13 @@ Use={
 ]
 }
 
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="mobile"
+textures/vram_compression/import_etc2_astc=true
+2d/snap/snap_2d_transforms_to_pixel=true
