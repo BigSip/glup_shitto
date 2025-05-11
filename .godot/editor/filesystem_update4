@@ -1,14 +1,13 @@
-res://main_menu.tscn
 res://Glup General Tiles.tres
+res://GlupMale.stylebox
 res://GlupHouse.gdshader
-res://GlupHouse2.tscn
+res://main_menu.tscn
 res://player.tscn
 res://GlupHouse.tscn
 res://GlupFrontYard.tscn
 res://GlupHills.tscn
 res://potatoPicking.tscn
-res://pplant2.tres
-res://TV2.tres
-res://jacket2.tres
-res://navman.gd
-res://potato.gd
+res://GlupHouse2.tscn
+res://bgmusic.tscn
+res://default_bus_layout.tres
+res://main_menu.gd

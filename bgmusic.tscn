@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cmwl24am3y3aw"]
+
+[ext_resource type="AudioStream" uid="uid://b7hbfpa6dmw0m" path="res://bgmusLoop.ogg" id="1_p34rl"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" groups=["bgm"]]
+stream = ExtResource("1_p34rl")
+volume_db = -10.0
+parameters/looping = true

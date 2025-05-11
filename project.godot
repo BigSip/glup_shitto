@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Navman="*res://navman.gd"
 InteractionManager="*res://interaction/interaction_manager.tscn"
+Bgmusic="*res://bgmusic.tscn"
 
 [display]
 
@@ -33,6 +34,7 @@ enabled=PackedStringArray("res://addons/dialogue_nodes/plugin.cfg")
 [global_group]
 
 player=""
+bgm=""
 
 [input]
 

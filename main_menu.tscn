@@ -36,5 +36,23 @@ offset_bottom = 408.0
 text = "Quit"
 metadata/_edit_use_anchors_ = true
 
+[node name="Music" type="Button" parent="buttonManager"]
+z_index = 45
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.863383
+anchor_top = -11.0156
+anchor_right = 0.863385
+anchor_bottom = -11.0156
+offset_left = 369.894
+offset_top = 648.567
+offset_right = 545.894
+offset_bottom = 728.567
+scale = Vector2(0.998004, 1)
+toggle_mode = true
+text = "Music Toggle"
+metadata/_edit_use_anchors_ = true
+
 [connection signal="pressed" from="buttonManager/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="buttonManager/Quit" to="." method="_on_quit_pressed"]
+[connection signal="toggled" from="buttonManager/Music" to="." method="_on_music_toggled"]
