@@ -1,9 +1,10 @@
-[gd_scene load_steps=39 format=4 uid="uid://bm2j33a5ov4yl"]
+[gd_scene load_steps=40 format=4 uid="uid://bm2j33a5ov4yl"]
 
 [ext_resource type="Script" uid="uid://baavteiem2nbi" path="res://level.gd" id="1_g1ok2"]
 [ext_resource type="PackedScene" uid="uid://bkv5g6mnnjmbc" path="res://player.tscn" id="2_da323"]
 [ext_resource type="TileSet" uid="uid://b8p0i0mts0ogw" path="res://Glup General Tiles.tres" id="3_aqp4n"]
 [ext_resource type="Texture2D" uid="uid://ekdxe2xfnk1a" path="res://sprites/Bed.png" id="4_8gcql"]
+[ext_resource type="Script" uid="uid://c0ujtjcivs4s5" path="res://bed.gd" id="4_g1ok2"]
 [ext_resource type="Texture2D" uid="uid://btrwth3ymbf5p" path="res://sprites/gismjacket.png" id="5_upcq3"]
 [ext_resource type="Script" uid="uid://cg2egwgkmfk0" path="res://gismjacket.gd" id="6_v7uog"]
 [ext_resource type="StyleBox" uid="uid://dxpovoffu01iv" path="res://GlupMale.stylebox" id="7_wulli"]
@@ -111,6 +112,8 @@ z_index = 1
 position = Vector2(120, 496)
 scale = Vector2(1.625, 1.625)
 texture = ExtResource("4_8gcql")
+script = ExtResource("4_g1ok2")
+destination_level_tag = "ihmscene"
 
 [node name="InteractionArea" parent="Bed" instance=ExtResource("13_vh3ff")]
 
