@@ -1,0 +1,32 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://8vli3opd478a"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_aw7mp"]
+
+[resource]
+script = ExtResource("1_aw7mp")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(316, 429),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "Diabeetus",
+"offset": Vector2(706, 340),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

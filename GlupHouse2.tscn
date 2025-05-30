@@ -278,5 +278,8 @@ position = Vector2(1120, 536)
 [node name="AnimatedSprite2D" parent="GlupShitto" index="1"]
 flip_h = true
 
+[node name="Touch Controls2" parent="." instance=ExtResource("24_aaqbr")]
+visible = false
+
 [editable path="Doors/Door_R"]
 [editable path="GlupShitto"]

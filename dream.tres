@@ -1,0 +1,138 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://crfx08isftvy"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_1cc3c"]
+
+[resource]
+script = ExtResource("1_1cc3c")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-740, 40),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "I don't want to live this way...",
+"offset": Vector2(-740, 640),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+},
+&"1_2": {
+"dialogue": "I don't even remember the names of characters when I watch a movie. I can't focus on books. I pick potatoes all day but I don't care about dressing like a potato picker...",
+"offset": Vector2(-740, 220),
+"options": {
+0: {
+"condition": {},
+"link": &"1_1",
+"text": "Just deal with it"
+},
+1: {
+"condition": {},
+"link": &"1_3",
+"text": "What can I do?"
+}
+},
+"size": Vector2(300, 308),
+"speaker": "Glup"
+},
+&"1_3": {
+"dialogue": "What if... What if my brain was always wired this way?",
+"offset": Vector2(-260, 520),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+},
+&"1_4": {
+"dialogue": "What if it's not me being weird? What if I really don't want to be a potato picker?",
+"offset": Vector2(300, 700),
+"options": {
+0: {
+"condition": {},
+"link": &"1_5",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+},
+&"1_5": {
+"dialogue": "I mean, what's to stop me from being an apple jumper? A grass trimmer even?",
+"offset": Vector2(740, 820),
+"options": {
+0: {
+"condition": {},
+"link": &"1_6",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+},
+&"1_6": {
+"dialogue": "I mean I really could be anything... But I've always wanted to pick apples...",
+"offset": Vector2(1118.73, 838.723),
+"options": {
+0: {
+"condition": {},
+"link": &"1_7",
+"text": "Then do it."
+},
+1: {
+"condition": {},
+"link": &"1_1",
+"text": "I'm scared..."
+}
+},
+"size": Vector2(300, 273),
+"speaker": "Glup"
+},
+&"1_7": {
+"dialogue": "What if I don't like it?",
+"offset": Vector2(1620, 1020),
+"options": {
+0: {
+"condition": {},
+"link": &"1_8",
+"text": "What if you do?"
+},
+1: {
+"condition": {},
+"link": &"1_1",
+"text": "Then live the way you are."
+}
+},
+"size": Vector2(300, 273),
+"speaker": "Glup"
+},
+&"1_8": {
+"dialogue": "I  just want to feel right... Feel happy.",
+"offset": Vector2(2200, 1220),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": ""
+}
+},
+"size": Vector2(300, 240),
+"speaker": "Glup"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

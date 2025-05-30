@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dbl74rdjb8bbl"]
+[gd_scene load_steps=3 format=3 uid="uid://dbl74rdjb8bbl"]
 
 [ext_resource type="VideoStream" uid="uid://ckddjv5q2lki1" path="res://ireallyhatemyself.ogv" id="1_8mvl0"]
+[ext_resource type="Script" uid="uid://b0qwpgjvakxub" path="res://hatemyselfcts.gd" id="2_edv53"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -8,4 +9,10 @@
 offset_right = 40.0
 offset_bottom = 40.0
 stream = ExtResource("1_8mvl0")
+volume_db = 6.0
 autoplay = true
+script = ExtResource("2_edv53")
+destination_level_tag = "dream"
+destination_door_tag = "R"
+
+[connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]

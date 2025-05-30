@@ -1,0 +1,57 @@
+[gd_scene load_steps=13 format=3 uid="uid://dpwe5j88eh23d"]
+
+[ext_resource type="Script" uid="uid://d0dhb3lnm5x02" path="res://dream.gd" id="1_dh56e"]
+[ext_resource type="Texture2D" uid="uid://bhk8gaseqelv3" path="res://sprites/black.png" id="1_kosea"]
+[ext_resource type="PackedScene" uid="uid://crodwupqd3hpe" path="res://Doors/Door.tscn" id="2_rlgu1"]
+[ext_resource type="StyleBox" uid="uid://dxpovoffu01iv" path="res://GlupMale.stylebox" id="3_fe1s8"]
+[ext_resource type="Script" uid="uid://bqyddqrwm1q8a" path="res://addons/dialogue_nodes/objects/DialogueBox.gd" id="4_dh56e"]
+[ext_resource type="Resource" uid="uid://crfx08isftvy" path="res://dream.tres" id="5_qj8qg"]
+[ext_resource type="Script" uid="uid://cqp6cvbut0qd3" path="res://addons/dialogue_nodes/objects/bbcodeWait.gd" id="6_ptqeq"]
+[ext_resource type="Script" uid="uid://byc7e2gbjexed" path="res://addons/dialogue_nodes/objects/bbcodeGhost.gd" id="7_0eg0n"]
+[ext_resource type="Script" uid="uid://da54sdnu18tgc" path="res://addons/dialogue_nodes/objects/bbcodeMatrix.gd" id="8_wdwfa"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_qfgw4"]
+script = ExtResource("6_ptqeq")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_q5fv2"]
+script = ExtResource("7_0eg0n")
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_4xrbr"]
+script = ExtResource("8_wdwfa")
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_dh56e")
+destination_level_tag = "house3"
+destination_door_tag = "L"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+top_level = true
+z_index = 5
+position = Vector2(592, 326)
+scale = Vector2(-0.571972, -0.44599)
+zoom = Vector2(1.62, 1.62)
+
+[node name="Black" type="Sprite2D" parent="."]
+position = Vector2(592, 332)
+scale = Vector2(118.4, 68)
+texture = ExtResource("1_kosea")
+
+[node name="Doors" type="Node2D" parent="."]
+
+[node name="Door_R" parent="Doors" instance=ExtResource("2_rlgu1")]
+position = Vector2(-256, 104)
+
+[node name="DialogueBox" type="Panel" parent="."]
+offset_left = 104.0
+offset_top = 216.0
+offset_right = 1120.0
+offset_bottom = 408.0
+theme_override_styles/panel = ExtResource("3_fe1s8")
+script = ExtResource("4_dh56e")
+data = ExtResource("5_qj8qg")
+start_id = "START"
+hide_portrait = true
+custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_qfgw4"), SubResource("RichTextEffect_q5fv2"), SubResource("RichTextEffect_4xrbr")])
+metadata/_custom_type_script = "uid://bqyddqrwm1q8a"
+
+[connection signal="dialogue_ended" from="DialogueBox" to="." method="_on_dialogue_box_dialogue_ended"]

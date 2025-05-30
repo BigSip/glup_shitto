@@ -1,0 +1,71 @@
+[gd_resource type="Resource" script_class="DialogueData" load_steps=2 format=3 uid="uid://d4alutx2bb2fw"]
+
+[ext_resource type="Script" uid="uid://mw45d4hl4oo5" path="res://addons/dialogue_nodes/objects/DialogueData.gd" id="1_l3jrv"]
+
+[resource]
+script = ExtResource("1_l3jrv")
+starts = {
+"START": &"0_1"
+}
+nodes = {
+&"0_1": {
+"link": &"1_1",
+"offset": Vector2(-20, 360),
+"start_id": "START"
+},
+&"1_1": {
+"dialogue": "Hey why are you going up there? You're not an apple jumper!",
+"offset": Vector2(260, 360),
+"options": {
+0: {
+"condition": {},
+"link": &"1_2",
+"text": "Yes I am"
+}
+},
+"size": Vector2(300, 320),
+"speaker": "Gleep"
+},
+&"1_2": {
+"dialogue": "You're not a real apple jumper! You're just a potato picker with mental issues!",
+"offset": Vector2(660, 500),
+"options": {
+0: {
+"condition": {},
+"link": &"1_3",
+"text": "Maybe I don't care what you have to say."
+}
+},
+"size": Vector2(300, 320),
+"speaker": "Gleep"
+},
+&"1_3": {
+"dialogue": "You have to! Because if you don't, that would mean my opinion was worthless!",
+"offset": Vector2(1060, 620),
+"options": {
+0: {
+"condition": {},
+"link": &"1_4",
+"text": "Maybe it is."
+}
+},
+"size": Vector2(300, 320),
+"speaker": "Gleep"
+},
+&"1_4": {
+"dialogue": "Well if that's true then that means I'm also an asshole. But I'm speaking facts so I am always right!",
+"offset": Vector2(1460, 760),
+"options": {
+0: {
+"condition": {},
+"link": "END",
+"text": "Okay loser."
+}
+},
+"size": Vector2(320, 320),
+"speaker": "Gleep"
+}
+}
+variables = {}
+strays = Array[String]([])
+characters = ""

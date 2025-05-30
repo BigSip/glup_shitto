@@ -7,6 +7,8 @@ const scene_demo = preload("res://GlupDemoVideo.tscn")
 const scene_picking = preload("res://potatoPicking.tscn")
 const scene_house2 = preload("res://GlupHouse2.tscn")
 const scene_ihmcut = preload("res://hatemyselfcutscene.tscn")
+const scene_dream = preload("res://dream.tscn")
+const scene_house3 = preload("res://house3.tscn")
 
 signal on_trigger_player_spawn
 
@@ -30,6 +32,10 @@ func go_to_level(level_tag, destination_tag):
 			scene_to_load = scene_house2
 		"ihmscene":
 			scene_to_load = scene_ihmcut
+		"dream":
+			scene_to_load = scene_dream
+		"house3":
+			scene_to_load = scene_house3
 			
 	if scene_to_load != null:
 		spawn_door_tag = destination_tag
