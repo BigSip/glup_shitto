@@ -44,7 +44,7 @@ script = ExtResource("5_pnj3w")
 script = ExtResource("6_2invo")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w03cm"]
-radius = 32.8288
+radius = 18.9901
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_82suf"]
 script = ExtResource("4_kcq22")
@@ -69,7 +69,6 @@ slide_on_ceiling = false
 
 [node name="AnimatedSprite2D" parent="GlupHouse/GlupShitto" index="1"]
 sprite_frames = ExtResource("3_8q5ly")
-animation = &"jump"
 
 [node name="Camera2D" type="Camera2D" parent="GlupHouse"]
 top_level = true
@@ -189,7 +188,7 @@ loop = true
 
 [node name="Door_R" parent="GlupHouse/Doors" instance=ExtResource("20_7ahnr")]
 position = Vector2(1197, 462)
-destination_level_tag = "GlupYard2"
+destination_level_tag = "gfy2"
 destination_door_tag = "L"
 spawn_direction = "R"
 
@@ -233,7 +232,6 @@ custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_82suf"), Sub
 metadata/_custom_type_script = "uid://bqyddqrwm1q8a"
 
 [node name="Touch Controls" parent="GlupHouse" instance=ExtResource("23_eyhyn")]
-visible = false
 
 [editable path="GlupHouse/GlupShitto"]
 [editable path="GlupHouse/Doors/Door_R"]

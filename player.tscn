@@ -73,4 +73,4 @@ texture_filter = 1
 position = Vector2(2.50015, -5.49988)
 scale = Vector2(1.82813, 1.82813)
 sprite_frames = SubResource("SpriteFrames_nvl01")
-animation = &"walk"
+animation = &"jump"

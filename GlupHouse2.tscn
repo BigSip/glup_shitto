@@ -58,7 +58,7 @@ script = ExtResource("11_p4tx7")
 script = ExtResource("12_r33vn")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w03cm"]
-radius = 32.8288
+radius = 18.9901
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_82suf"]
 script = ExtResource("10_ljyyf")
@@ -144,7 +144,6 @@ start_id = "START"
 hide_portrait = true
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_05qbw"), SubResource("RichTextEffect_w03cm"), SubResource("RichTextEffect_vacjh")])
 max_options_count = 1
-options_position = 2
 metadata/_custom_type_script = "uid://bqyddqrwm1q8a"
 
 [node name="InteractionArea" parent="Gismjacket" instance=ExtResource("13_vh3ff")]
@@ -172,6 +171,13 @@ texture = ExtResource("15_e02e2")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-128, 504)
+shape = SubResource("SegmentShape2D_q0qlx")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="StaticBody2D"]
+position = Vector2(1176, -16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D/StaticBody2D"]
 position = Vector2(-128, 504)
 shape = SubResource("SegmentShape2D_q0qlx")
 
@@ -279,7 +285,6 @@ position = Vector2(1120, 536)
 flip_h = true
 
 [node name="Touch Controls2" parent="." instance=ExtResource("24_aaqbr")]
-visible = false
 
 [editable path="Doors/Door_R"]
 [editable path="GlupShitto"]

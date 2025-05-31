@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://ds4q73y7l2uuj"]
+
+[ext_resource type="VideoStream" uid="uid://dtiy1ri344gu2" path="res://glupEnd.ogv" id="1_n735c"]
+[ext_resource type="Script" uid="uid://b0qwpgjvakxub" path="res://hatemyselfcts.gd" id="2_egc6y"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+texture_filter = 6
+offset_right = 1920.0
+offset_bottom = 1080.0
+stream = ExtResource("1_n735c")
+autoplay = true
+expand = true
+script = ExtResource("2_egc6y")
+destination_level_tag = "mm"
+
+[connection signal="finished" from="VideoStreamPlayer" to="VideoStreamPlayer" method="_on_finished"]

@@ -72,7 +72,7 @@ position = Vector2(96, 96)
 
 [node name="Door_R" parent="Doors" instance=ExtResource("4_fmya4")]
 position = Vector2(1192, 480)
-destination_level_tag = "GlupHills2"
+destination_level_tag = "climb"
 destination_door_tag = "L"
 spawn_direction = "R"
 
@@ -131,7 +131,6 @@ scale = Vector2(0.4375, 0.4375)
 texture = ExtResource("14_u7emh")
 
 [node name="Touch Controls" parent="." instance=ExtResource("15_1hm3f")]
-visible = false
 
 [editable path="GlupShitto"]
 [editable path="Doors/Door_L"]

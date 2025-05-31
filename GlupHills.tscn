@@ -151,7 +151,6 @@ scale = Vector2(1.3125, 1.3125)
 texture = ExtResource("14_41n2d")
 
 [node name="Touch Controls" parent="." instance=ExtResource("15_debiw")]
-visible = false
 position = Vector2(-8, 0)
 scale = Vector2(1.62, 1.613)
 

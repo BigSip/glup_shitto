@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://cfwandpe8o16a"]
+[gd_resource type="SpriteFrames" load_steps=8 format=3 uid="uid://cfwandpe8o16a"]
 
 [ext_resource type="Texture2D" uid="uid://cdes06ylriips" path="res://sprites/GlupT.png" id="1_oq1ys"]
 [ext_resource type="Texture2D" uid="uid://cni5cnnkrync3" path="res://sprites/GlupT JumpAnim.png" id="2_xiexe"]
@@ -7,17 +7,9 @@
 atlas = ExtResource("1_oq1ys")
 region = Rect2(0, 0, 64, 64)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_h4ifq"]
-atlas = ExtResource("2_xiexe")
-region = Rect2(0, 0, 64, 64)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_5w1c0"]
 atlas = ExtResource("2_xiexe")
 region = Rect2(64, 0, 64, 64)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_0jmr0"]
-atlas = ExtResource("2_xiexe")
-region = Rect2(128, 0, 64, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8i43q"]
 atlas = ExtResource("1_oq1ys")
@@ -43,13 +35,7 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_h4ifq")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_5w1c0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_0jmr0")
 }],
 "loop": true,
 "name": &"jump",

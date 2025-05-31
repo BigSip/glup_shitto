@@ -69,7 +69,7 @@ script = ExtResource("10_b3gxw")
 script = ExtResource("11_i5wkf")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_w03cm"]
-radius = 32.8288
+radius = 16.4088
 
 [sub_resource type="RichTextEffect" id="RichTextEffect_82suf"]
 script = ExtResource("9_e7nno")
@@ -156,7 +156,6 @@ start_id = "START"
 hide_portrait = true
 custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_05qbw"), SubResource("RichTextEffect_w03cm"), SubResource("RichTextEffect_vacjh")])
 max_options_count = 1
-options_position = 2
 metadata/_custom_type_script = "uid://bqyddqrwm1q8a"
 
 [node name="InteractionArea" parent="Gismjacket" instance=ExtResource("12_rf8jg")]
@@ -296,7 +295,6 @@ custom_effects = Array[RichTextEffect]([SubResource("RichTextEffect_82suf"), Sub
 metadata/_custom_type_script = "uid://bqyddqrwm1q8a"
 
 [node name="Touch Controls" parent="." instance=ExtResource("24_vacjh")]
-visible = false
 
 [editable path="GlupShitto"]
 [editable path="Doors/Door_R"]
